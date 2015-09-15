@@ -8,10 +8,107 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
+          body {
+            font-family: 'Ubuntu', 'Bitstream Vera Sans', sans-serif;
+          }
+          .wrapper {
+            width: 950px;
+            margin: 0 auto;
+            background-color: #eee;
+          }
 
+          .l-center {
+            text-align: center;
+          }
+
+          .responsive-images img {
+            max-width: 100%;
+            height: auto;
+          }
+
+          .responsive-image {
+            max-width: 100%;
+            height: auto;
+          }
         </style>
     </head>
     <body>
-        
+        <div class="wrapper">
+          <h1>Image behaviour example</h1>
+
+          <h2>One small image</h2>
+          <div class="row">
+            <img src="phi.png" alt="">
+          </div>
+
+          <h2>Small images with total width less than container</h2>
+          <div class="row">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+          </div>
+
+          <h2>Small images with total width more than container</h2>
+          <div class="row">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+          </div>
+
+          <h2>One small image, centered</h2>
+          <div class="row l-center">
+            <img src="phi.png" alt="">
+          </div>
+
+          <h2>Small images with total width less than container, centered</h2>
+          <div class="row l-center">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+          </div>
+
+          <h2>Small images with total width more than container, centered</h2>
+          <div class="row l-center">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+            <img src="phi.png" alt="">
+          </div>
+
+          <h2>Medium image</h2>
+          <div class="row l-center">
+            <img src="phi-mid.png" alt="">
+          </div>
+
+          <h2>Medium images with total width more than container</h2>
+          <div class="row">
+            <img src="phi-mid.png" alt="">
+            <img src="phi-mid.png" alt="">
+            <img src="phi-mid.png" alt="">
+          </div>
+
+          <h2>Medium images with total width more than container, centered</h2>
+          <div class="row l-center">
+            <img src="phi-mid.png" alt="">
+            <img src="phi-mid.png" alt="">
+            <img src="phi-mid.png" alt="">
+          </div>
+
+          <h2>Responsive image indirectly</h2>
+          <div class="row responsive-images">
+            <img src="phi-wide.png" alt="">
+          </div>
+
+          <h2>Responsive image directly</h2>
+          <div class="row">
+            <img src="phi-wide.png" alt="" class="responsive-image">
+          </div>
+
+        </div>
     </body>
 </html>
